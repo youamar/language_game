@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jeu.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="jeu.js"></script>
+    <script>
+        $(document).ready(function () {
+            getUrlId();
+            createShuffledAnswerButtons();
+        });
+    </script>
+    <title>54915 - Game</title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="title">
+            <header>
+                <h1>
+                    <div id="overtitle">Plan langue</div>
+                    <div id="undertitle">WEBG2 - Projet 1</div>
+                </h1>
+            </header>
+        </div>
+        <div class="form">
+            <form>
+                <div id="questiontitle"></div>
+                <br>
+                <br>
+                <p id="question"></p>
+                <div id="answerWordsForm">
+                    <div class="answerWords"></div>
+                </div>
+                <div class="badresult"></div>
+                <div class="goodresult"></div>
+                <p id="instruction">Cliquez sur un mot pour le placer dans la réponse (à la suite). Cliquez sur un
+                    mot de la réponse pour l'enlever.
+                </p>
+                <div class="availableWords">
+                </div>
+                <div class="endResult">
+                </div>
+                <div class="nextQuestionButton">
+                    <button class='nextbutton'>Question suivante</button>
+                </div>
+                <div class="endQuiz">
+                    <button class='retryQuiz'>Recommencer le quiz</button>
+                    <button class='otherQuiz'>Choisir un autre quiz</button>
+                </div>
+                <button class="button">Vérifier</button>
+            </form>
+        </div>
+
+        <div class="quiztitle">
+            <h2 id="chosentheme"></h2>
+        </div>
+
+        <div class="footer">
+            <footer>
+                Auteur : 54915 - Yahya OUAMAR
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,body{
+height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr 0.4fr 2.9fr 0.1fr;
+    grid-template-areas: "title title" "formtitle formtitle" "form form" "footer .";
+}
+
+/* Partie titre de la page */
+.title { 
+    width: fit-content;
+    border-radius: 0.5em;
+    padding-left: 15em;
+    padding-right: 15em;
+    grid-area: title; 
+    background-color: #2369b8;
+    color: white;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+
+#overtitle{
+    font-size: 2em;
+    padding-top: 0.3em;
+}
+
+#undertitle{
+    padding-bottom: 0.5em;
+}
+  
+/* Partie sélection de la page */
+.formtitle { 
+    grid-area: formtitle; 
+    margin-left: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+#underformtitle{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2em;
+}
+  
+.form { 
+    grid-area: form; 
+    margin-left: 0.8em;
+    text-align: left;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  background-color: #5494de;
+  border: 0.1em solid lightgray;
+  border-radius: 0.2em;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+  
+/* Pied de page */
+.footer { 
+    grid-area: footer; 
+    border-top: 0.07em solid black;
+    width: fit-content;
+    margin-left: 0.8em;
+}

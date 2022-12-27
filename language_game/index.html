@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $(document).ready(function () {
+            displayDescriptionsQuiz();
+            CreateUrlId();
+        });
+    </script>
+    <title>54915 - Project 1</title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="title">
+            <header>
+                <h1>
+                    <div id="overtitle">Plan langue</div>
+                    <div id="undertitle">WEBG2 - Projet 1</div>
+                </h1>
+            </header>
+        </div>
+
+        <div class="formtitle">
+            <h2>Apprendre une langue en s'amusant</h2>
+        </div>
+        <div class="form">
+            <form>
+                <div id="underformtitle">Faites votre choix</div>
+                <br>
+                <br>
+                <select class="descriptions">
+                </select>
+                <a id="game" onclick="openWindow('jeu.html?quizId='+CreateUrlId())" class="button">Lancer le test</a>
+            </form>
+        </div>
+
+        <div class="footer">
+            <footer>
+                Auteur : 54915 - Yahya OUAMAR
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
