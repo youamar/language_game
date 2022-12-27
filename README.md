@@ -11,5 +11,5 @@ Clone the project
 ```
 
 Go to the project directory (language_game) and open the index.html file.
-## Social media
+## Social Media
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://be.linkedin.com/in/yahya-ouamar)
